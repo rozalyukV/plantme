@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300,400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>PlantMe</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="nav" aria-label="Navigation">
+          <div class="nav-links">
+            <a href="#" class="logo" aria-label="Homepage"
+              ><img src="img/logo.svg" alt="Logo"
+            /></a>
+            <ul class="nav-menu" role="menu">
+              <li role="none"><a role="menu-item" href="#">About Us</a></li>
+              <li role="none"><a role="menu-item" href="#">Contact Us</a></li>
+              <li role="none"><a role="menu-item" href="#">Block</a></li>
+              <li role="none"><a role="menu-item" href="#">Site Map</a></li>
+              <li role="none">
+                <a
+                  href="#"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  role="menu-item"
+                  >Eng</a
+                >
+                <ul class="dropdown" role="menu">
+                  <li role="none"><a role="menu-item" href="#">DE</a></li>
+                  <li role="none"><a role="menu-item" href="#">PL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="search-container">
+            <form role="search">
+              <label for="site-search" class="visually-hidden"
+                >Search the site:</label
+              >
+              <input
+                class="search"
+                type="text"
+                placeholder="Search this site"
+                aria-label="Search this site"
+              />
+              <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="hero-content">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button aria-label="Buy now">Buy Now</button>
+          </div>
+          <img
+            src="img/hero.svg"
+            alt="Hero content image"
+            width="550"
+            height="500"
+          />
+        </section>
+
+        <section class="about" aria-label="About Us Section">
+          <div class="article-container" aria-label="Article Container">
+            <div class="article-img" aria-label="Article Image">
+              <img
+                src="img/article.svg"
+                width="180"
+                height="230"
+                alt="Article Image"
+              />
+            </div>
+            <div class="article-text" aria-labelledby="article-heading">
+              <h3 id="article-heading">About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
+                tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+                tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="#" aria-label="Learn More About">Learn more about</a>
+            </div>
+          </div>
+          <div class="article-container" aria-label="Article Container">
+            <div class="article-img" aria-label="Article Image">
+              <img
+                src="img/article.svg"
+                width="180"
+                height="230"
+                alt="Article Image"
+              />
+            </div>
+            <div class="article-text" aria-labelledby="article-heading">
+              <h3 id="article-heading">About Us 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
+                tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+                tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="#" aria-label="Learn More About">Learn more about</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-heading">
+          <div class="contact-container">
+            <div class="contact-info">
+              <h1>Contact Us</h1>
+              <p>
+                Fill up the form and our Team will get back to you within 24
+                hours. Happy to see your message!
+              </p>
+              <address class="contact-channels">
+                <img src="img/facebook.svg" alt="Facebook icon" />
+                <span class="contact-channel">+380 93 15 32 456</span>
+                <img src="img/facebook.svg" alt="Facebook icon" />
+                <span class="contact-channel"> example@gmail.com</span>
+                <img src="img/facebook.svg" alt="Facebook icon" />
+                <span class="contact-channel"> Pidmurma 5a, Lviv</span>
+              </address>
+              <div class="social-media">
+                <a href="#"
+                  ><img src="img/facebook.svg" width="33px" alt="Facebook icon"
+                /></a>
+                <a href="#"
+                  ><img src="img/facebook.svg" width="33px" alt="Facebook icon"
+                /></a>
+                <a href="#"
+                  ><img src="img/facebook.svg" width="33px" alt="Facebook icon"
+                /></a>
+              </div>
+            </div>
+            <div>
+              <form class="contact-form" aria-label="Contact Form">
+                <div class="contact-form-inputs">
+                  <div class="input-field">
+                    <label for="first-name"
+                      ><span class="required-field"></span>First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="last-name"
+                      ><span class="required-field"></span>Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      placeholder="Doe"
+                      disabled=""
+                      aria-disabled="true"
+                    />
+                  </div>
+                </div>
+                <div class="contact-form-inputs">
+                  <div class="input-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      required=""
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+                  <div class="input-field">
+                    <label for="phone">Phone Number</label>
+                    <div>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="phone-number"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="radio-boxes"
+                  aria-describedby="Profession Description"
+                >
+                  <div class="custom-radio">
+                    <input
+                      type="radio"
+                      id="developer"
+                      value="UI Developer"
+                      name="profession"
+                      checked
+                    />
+                    <label for="developer">UI Developer</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input
+                      type="radio"
+                      id="designer"
+                      value="UI/UX Designer"
+                      name="profession"
+                    />
+                    <label for="designer">UI/UX Designer</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input
+                      type="radio"
+                      id="expert"
+                      value="Accessibility Expert"
+                      name="profession"
+                    />
+                    <label for="expert">Accessibility Expert</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input
+                      type="radio"
+                      id="engineer"
+                      value="QA Engineer"
+                      name="profession"
+                    />
+                    <label for="engineer">QA Engineer</label>
+                  </div>
+                  <div class="custom-radio">
+                    <input
+                      type="radio"
+                      id="other"
+                      value="Other"
+                      name="profession"
+                    />
+                    <label for="other">Other</label>
+                  </div>
+                </div>
+                <div class="textarea-wrapper">
+                  <label for="msg">Message</label>
+                  <input
+                    type="text"
+                    id="msg"
+                    class="textarea"
+                    placeholder="Text here..."
+                  />
+                </div>
+                <div class="terms-checkboxes">
+                  <div class="checkbox-container">
+                    <input type="checkbox" value="" id="agree-1" />
+                    <label for="agree-1">Accept the Terms</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" value="" checked id="agree-2" />
+                    <label for="agree-2">Accept the Terms 2</label>
+                  </div>
+                </div>
+                <div class="submit-button-container">
+                  <button type="submit" aria-label="Send Message">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer" aria-label="Footer">
+          <div class="footer-left">
+            <p class="brand-name">PlantMe</p>
+            <p>
+              Subscribe and be the first to know about our news and promotions.
+            </p>
+            <div>
+              <form aria-label="Subscribe form">
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  aria-required="true"
+                  required
+                />
+                <button class="subscribe-button" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-right">
+            <nav aria-label="Footer navigation">
+              <ul class="footer-navigation">
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#site-map">Site Map</a></li>
+              </ul>
+            </nav>
+            <address aria-label="Contact Information">
+              <p>Contacts</p>
+              <p>
+                <a href="tel:+380630720121"> +38 063 072 0121 </a>
+              </p>
+              <p>
+                <a href="mailto:plantme.store@gmail.com"
+                  >plantme.store@gmail.com</a
+                >
+              </p>
+              <img src="img/visa.svg" alt="Visa" />
+              <img src="img/mastercard.svg" alt="Mastercard" />
+            </address>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <ul>
+            <li class="all-rights">&#169; 2022 PlantMe. All Rights Reserved</li>
+            <ul class="miscellaneous">
+              <li>Privacy Policy</li>
+              <li>Terms of service</li>
+              <li>Language</li>
+            </ul>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const phoneInputField = document.querySelector('#phone')
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
+      })
+    </script>
+  </body>
+</html>
