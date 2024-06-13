@@ -30,38 +30,43 @@
             <a href="#" class="logo" aria-label="Homepage"
               ><img src="img/logo.svg" alt="Logo"
             /></a>
-            <ul class="nav-menu" role="menu">
-              <li role="none"><a role="menu-item" href="#">About Us</a></li>
-              <li role="none"><a role="menu-item" href="#">Contact Us</a></li>
-              <li role="none"><a role="menu-item" href="#">Block</a></li>
-              <li role="none"><a role="menu-item" href="#">Site Map</a></li>
+            <ul class="nav-menu" role="menubar">
+              <li role="none"><a role="menuitem" href="#">About Us</a></li>
+              <li role="none"><a role="menuitem" href="#">Contact Us</a></li>
+              <li role="none"><a role="menuitem" href="#">Block</a></li>
+              <li role="none"><a role="menuitem" href="#">Site Map</a></li>
               <li role="none">
                 <a
                   href="#"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  role="menu-item"
+                  role="menuitem"
                   >Eng</a
                 >
-                <ul class="dropdown" role="menu">
-                  <li role="none"><a role="menu-item" href="#">DE</a></li>
-                  <li role="none"><a role="menu-item" href="#">PL</a></li>
+                <ul
+                  class="dropdown"
+                  role="menu"
+                  aria-labelledby="language-menu-toggle"
+                >
+                  <li role="none"><a role="menuitem" href="#">DE</a></li>
+                  <li role="none"><a role="menuitem" href="#">PL</a></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="search-container">
-            <form role="search">
+            <form role="search" aria-label="Site Search Form">
               <label for="site-search" class="visually-hidden"
                 >Search the site:</label
               >
               <input
                 class="search"
                 type="text"
+                id="site-search"
                 placeholder="Search this site"
                 aria-label="Search this site"
               />
-              <button type="submit">
+              <button type="submit" aria-label="Submit search query">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
             </form>
@@ -102,7 +107,7 @@
               />
             </div>
             <div class="article-text" aria-labelledby="article-heading">
-              <h3 id="article-heading">About Us</h3>
+              <h3 id="article-heading-1">About Us</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
                 tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -124,7 +129,7 @@
               />
             </div>
             <div class="article-text" aria-labelledby="article-heading">
-              <h3 id="article-heading">About Us 2</h3>
+              <h3 id="article-heading-2">About Us 2</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
                 tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -346,9 +351,15 @@
           <ul>
             <li class="all-rights">&#169; 2022 PlantMe. All Rights Reserved</li>
             <ul class="miscellaneous">
-              <li>Privacy Policy</li>
-              <li>Terms of service</li>
-              <li>Language</li>
+              <li>
+                <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Terms of Service">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Language Options">Language</a>
+              </li>
             </ul>
           </ul>
         </div>

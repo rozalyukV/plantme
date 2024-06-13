@@ -534,3 +534,8 @@ footer .footer-bottom .miscellaneous {
     font-size: 14px;
     color: #9b9b9b;
 }
+
+footer .footer-bottom .miscellaneous li a{
+    text-decoration: none;
+    color: #9b9b9b;
+}
